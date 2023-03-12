@@ -1116,7 +1116,7 @@ So we build this macro to restore postion after code format."
 
 (defun lsp-bridge--position ()
   "Get position of cursor."
-  (list :line (1- (line-number-at-pos)) :character (lsp-bridge--calculate-column)))
+  (list :line (line-number-at-pos) :character (lsp-bridge--calculate-column)))
 
 (defvar-local lsp-bridge--before-change-begin-pos nil)
 (defvar-local lsp-bridge--before-change-end-pos nil)
